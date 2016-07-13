@@ -1,0 +1,94 @@
+/* GRID
+----------------------------------------------- */
+
+.linha,
+.coluna {
+  box-sizing: border-box;
+}
+
+.linha:before,
+.linha:after {
+  content: " ";
+  display: table;
+}
+
+.linha:after {
+  clear: both;
+}
+
+.coluna {
+  position: relative;
+  float: left;
+}
+
+.coluna + .coluna {
+  margin-left: 1.6%;
+}
+
+.coluna-1 {
+  width: 6.86666666667%;
+}
+
+.coluna-2 {
+  width: 15.3333333333%;
+}
+
+.coluna-3 {
+  width: 23.8%;
+}
+
+.coluna-4 {
+  width: 32.2666666667%;
+}
+
+.coluna-5 {
+  width: 40.7333333333%;
+}
+
+.coluna-6 {
+  width: 49.2%;
+}
+
+.coluna-7 {
+  width: 57.6666666667%;
+}
+
+.coluna-8 {
+  width: 66.1333333333%;
+}
+
+.coluna-9 {
+  width: 74.6%;
+}
+
+.coluna-10 {
+  width: 83.0666666667%;
+}
+
+.coluna-11 {
+  width: 91.5333333333%;
+}
+
+.coluna-12 {
+  width: 100%;
+}
+
+
+.assistive-text,
+.skip-link { display:none;}
+
+
+
+.boxed {
+    margin: 0 auto;
+    max-width: 1340px;
+}
+
+.fullwidh {
+	width:100;	
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
