@@ -52,3 +52,18 @@ function remove_core_updates()
 
 remove_action('load-update-core.php','wp_update_plugins');
 add_filter('pre_site_transient_update_plugins','__return_null');
+
+
+//FUNÇÃO PARA RESUMO DE POST COM QUANTIDADE PERSONALIZADA DE CARACTERES
+
+function tamanho_resumo($maxchars) 
+		{
+         $resumo = get_the_content($post->ID);
+         $resumo = substr($resumo,0,$maxchars);
+		 $tamanhoresumo=strlen($resumo);
+		 if ($tamanhoresumo < $maxchars)
+         	echo $resumo;
+         else
+		 	echo $resumo . '...';
+		}
+//USO: tamanho_resumo('130');
