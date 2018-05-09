@@ -1,0 +1,29 @@
+//add Favicon to LP
+<link rel="icon" href="http://dominio.com.br/img/favicon.ico" type="image/x-icon"/>
+
+//add mascara para telefone no input da LP
+<script src="https://cdnjs.com/libraries/jquery.mask" type="text/javascript"></script>
+
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+$j(document).ready(function(){
+
+$j("#personal_phone").mask("(99) 9999-9999?9");
+    $j("#personal_phone").blur(function(event) {
+        if($j(this).val().length == 15){
+          $j('#personal_phone').mask('(99) 99999-999?9');
+        } else {
+          $j('#personal_phone').mask('(99) 9999-9999?9');
+        }
+    });
+  });
+    </script>
+    
+//add new "li" item to LP
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+$j(document).ready(function(){
+    $j('ul.section--list li:last').after('<li><div class="section--list-icon"><img id="topics-fourth-icon" alt="Grey icon" style=" max-width: 28px; height: 28px;" data-always-proportional="true" data-editable="true" data-content="image" data-field-name="landing_page[values[topics-fourth-icon]" data-field-props="landing_page[values[topics-fourth-icon-%PROP%]]" data-controls-position="" data-not-responsive="" data-default-width="28" data-default-height="28" src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/tick_green.png"></div><div id="topics-fourth-text" class="topic--text" data-editable="true" data-content="html" data-field-name="landing_page[values[topics-fourth-text]]"><p><span style="color: #262626;">Excelentes ângulos de entrada, de saída e altura do solo</span></p></div></li>');
+});
+</script>
+
